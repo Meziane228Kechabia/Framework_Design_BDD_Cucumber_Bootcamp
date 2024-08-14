@@ -1,0 +1,129 @@
+Microsoft Windows [Version 10.0.22631.3880]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber>mvn test
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --< com.FRAMEWORK_Design_BDD_Cucumber:FRAMEWORK_Design_BDD_Cucumber >---
+[INFO] Building FRAMEWORK_Design_BDD_Cucumber 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/messages/maven-metadata.xml
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/messages/maven-metadata.xml (2.6 kB at 5.5 kB/s)
+[INFO]
+[INFO] --- resources:3.0.2:resources (default-resources) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- compiler:3.8.0:compile (default-compile) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\target\classes
+[INFO]
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO]
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\target\test-classes
+[INFO]
+[INFO] --- surefire:2.22.1:test (default-test) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+Aug 13, 2024 1:50:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:50:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:50:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:51:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:51:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:51:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:51:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:51:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:51:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:51:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 13, 2024 1:51:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+[ERROR] Tests run: 21, Failures: 4, Errors: 0, Skipped: 8, Time elapsed: 188.482 s <<< FAILURE! - in TestSuite
+[ERROR] validateCompleteCheckoutWithValidProductPositiveFlow(tutorialsNinja.TestCases.AddToCartTest)  Time elapsed: 0.141 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException:
+no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text() = '$122.00']"}
+  (Session info: chrome=127.0.6533.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c6d738755ed5b0afcb67b5106ace1ab, findElement {using=xpath, value=//h2[text() = '$122.00']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\mezia\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63322/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c6d738755ed5b0afcb67b5106ace1ab
+        at tutorialsNinja.TestCases.AddToCartTest.validateCompleteCheckoutWithValidProductPositiveFlow(AddToCartTest.java:41)
+
+[ERROR] verifyLoginWithValidCredentials(tutorialsNinja.TestCases.LoginTest)  Time elapsed: 0.449 s  <<< FAILURE!
+org.testng.TestNGException:
+
+Cannot inject @Test annotated Method [verifyLoginWithValidCredentials] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+
+[ERROR] verifyRegisterWithMandatoryDetails(tutorialsNinja.TestCases.RegisterTest)  Time elapsed: 1.494 s  <<< FAILURE!
+java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\src\test\java\com\tutorialsNinja\TestData\ExcelData.xlsx (The system cannot find the path specified)
+Caused by: java.io.FileNotFoundException: C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\src\test\java\com\tutorialsNinja\TestData\ExcelData.xlsx (The system cannot find the path specified)
+
+[ERROR] loginSetup(tutorialsNinja.TestCases.SearchProductTest)  Time elapsed: 5.586 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException:
+disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=127.0.6533.73)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6380b57c88e79d5de7582715839987b3, get {url=https://tutorialsninja.com/demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\mezia\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63540/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6380b57c88e79d5de7582715839987b3
+        at tutorialsNinja.TestCases.SearchProductTest.loginSetup(SearchProductTest.java:25)
+
+[INFO]
+[INFO] Results:
+[INFO]
+[ERROR] Failures:
+[ERROR]   AddToCartTest.validateCompleteCheckoutWithValidProductPositiveFlow:41 » NoSuchElement
+[ERROR]   LoginTest.verifyLoginWithValidCredentials » TestNG
+Cannot inject @Test annota...
+[ERROR]   RegisterTest.verifyRegisterWithMandatoryDetails » Runtime java.io.FileNotFound...
+[ERROR] tutorialsNinja.TestCases.SearchProductTest.loginSetup(tutorialsNinja.TestCases.SearchProductTest)
+[ERROR]   Run 1: SearchProductTest.loginSetup:25->TestBase.initalizeBrowserAndOpenApplication:58 » WebDriver
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO]
+[INFO]
+[ERROR] Tests run: 17, Failures: 4, Errors: 0, Skipped: 4
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:16 min
+[INFO] Finished at: 2024-08-13T13:53:50-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project FRAMEWORK_Design_BDD_Cucumber: There are test failures.
+[ERROR]
+[ERROR] Please refer to C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber>

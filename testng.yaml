@@ -1,0 +1,10 @@
+name: Suite
+configFailurePolicy: skip
+tests:
+  - name: Test
+  classes:
+    - tutorialsNinja.TestCases.RegisterTest
+    - tutorialsNinja.TestCases.SearchProductTest
+    - tutorialsNinja.TestCases.AddToCartTest
+    - tutorialsNinja.TestCases.LoginTest
+

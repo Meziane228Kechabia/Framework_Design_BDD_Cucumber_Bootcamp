@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 4, Errors: 0, Skipped: 8, Time elapsed: 188.482 s <<< FAILURE! - in TestSuite
+validateCompleteCheckoutWithValidProductPositiveFlow(tutorialsNinja.TestCases.AddToCartTest)  Time elapsed: 0.141 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text() = '$122.00']"}
+  (Session info: chrome=127.0.6533.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c6d738755ed5b0afcb67b5106ace1ab, findElement {using=xpath, value=//h2[text() = '$122.00']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\mezia\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63322/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c6d738755ed5b0afcb67b5106ace1ab
+	at tutorialsNinja.TestCases.AddToCartTest.validateCompleteCheckoutWithValidProductPositiveFlow(AddToCartTest.java:41)
+
+verifyLoginWithValidCredentials(tutorialsNinja.TestCases.LoginTest)  Time elapsed: 0.449 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Cannot inject @Test annotated Method [verifyLoginWithValidCredentials] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+
+verifyRegisterWithMandatoryDetails(tutorialsNinja.TestCases.RegisterTest)  Time elapsed: 1.494 s  <<< FAILURE!
+java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\src\test\java\com\tutorialsNinja\TestData\ExcelData.xlsx (The system cannot find the path specified)
+Caused by: java.io.FileNotFoundException: C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\src\test\java\com\tutorialsNinja\TestData\ExcelData.xlsx (The system cannot find the path specified)
+
+loginSetup(tutorialsNinja.TestCases.SearchProductTest)  Time elapsed: 5.586 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=127.0.6533.73)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6380b57c88e79d5de7582715839987b3, get {url=https://tutorialsninja.com/demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\mezia\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63540/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6380b57c88e79d5de7582715839987b3
+	at tutorialsNinja.TestCases.SearchProductTest.loginSetup(SearchProductTest.java:25)
+

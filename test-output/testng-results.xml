@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="11" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-13T13:47:30 EDT" name="Suite" finished-at="2024-08-13T13:48:50 EDT" duration-ms="80026">
+    <groups>
+    </groups>
+    <test started-at="2024-08-13T13:47:30 EDT" name="Test" finished-at="2024-08-13T13:48:50 EDT" duration-ms="80026">
+      <class name="tutorialsNinja.TestCases.RegisterTest">
+        <test-method signature="verifyRegisterWithMandatoryDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:30 EDT" name="verifyRegisterWithMandatoryDetails" data-provider="TNRegister" finished-at="2024-08-13T13:47:30 EDT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\src\test\java\com\tutorialsNinja\TestData\ExcelData.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\src\test\java\com\tutorialsNinja\TestData\ExcelData.xlsx (The system cannot find the path specified)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.FileNotFoundException: C:\Users\mezia\eclipse-workspace\FRAMEWORK_Design_BDD_Cucumber\src\test\java\com\tutorialsNinja\TestData\ExcelData.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at tutorialsNinja.TestData.ExcelCode.readFromExcelSheetTNRegister(ExcelCode.java:71)
+at tutorialsNinja.TestData.ExcelCode.getTNExcelRegisterData(ExcelCode.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithMandatoryDetails -->
+        <test-method is-config="true" signature="registerSetup()[pri:0, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:30 EDT" name="registerSetup" finished-at="2024-08-13T13:47:37 EDT" duration-ms="6882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerSetup -->
+        <test-method signature="verifyRegisterWithAllDetails()[pri:2, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:37 EDT" name="verifyRegisterWithAllDetails" finished-at="2024-08-13T13:47:39 EDT" duration-ms="2017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithAllDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:39 EDT" name="tearDown" finished-at="2024-08-13T13:47:39 EDT" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="registerSetup()[pri:0, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:39 EDT" name="registerSetup" finished-at="2024-08-13T13:47:44 EDT" duration-ms="5150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerSetup -->
+        <test-method signature="verifyRegisterWithExistingEmail()[pri:3, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:44 EDT" name="verifyRegisterWithExistingEmail" finished-at="2024-08-13T13:47:46 EDT" duration-ms="1613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithExistingEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:46 EDT" name="tearDown" finished-at="2024-08-13T13:47:46 EDT" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="registerSetup()[pri:0, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:46 EDT" name="registerSetup" finished-at="2024-08-13T13:47:51 EDT" duration-ms="5103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerSetup -->
+        <test-method signature="verifyRegisterWithWrongConfirmPassword()[pri:4, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:51 EDT" name="verifyRegisterWithWrongConfirmPassword" finished-at="2024-08-13T13:47:53 EDT" duration-ms="1575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithWrongConfirmPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:53 EDT" name="tearDown" finished-at="2024-08-13T13:47:53 EDT" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="registerSetup()[pri:0, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:53 EDT" name="registerSetup" finished-at="2024-08-13T13:47:58 EDT" duration-ms="5553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerSetup -->
+        <test-method signature="verifyRegisterWithNoDetails()[pri:5, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:58 EDT" name="verifyRegisterWithNoDetails" finished-at="2024-08-13T13:47:59 EDT" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithNoDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.RegisterTest@69fb6037]" started-at="2024-08-13T13:47:59 EDT" name="tearDown" finished-at="2024-08-13T13:47:59 EDT" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tutorialsNinja.TestCases.RegisterTest -->
+      <class name="tutorialsNinja.TestCases.SearchProductTest">
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:tutorialsNinja.TestCases.SearchProductTest@55b53d44]" started-at="2024-08-13T13:47:59 EDT" name="loginSetup" finished-at="2024-08-13T13:48:04 EDT" duration-ms="4273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifySearchValidProduct()[pri:1, instance:tutorialsNinja.TestCases.SearchProductTest@55b53d44]" started-at="2024-08-13T13:48:04 EDT" name="verifySearchValidProduct" finished-at="2024-08-13T13:48:04 EDT" duration-ms="838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchValidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.SearchProductTest@55b53d44]" started-at="2024-08-13T13:48:04 EDT" name="tearDown" finished-at="2024-08-13T13:48:05 EDT" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:tutorialsNinja.TestCases.SearchProductTest@55b53d44]" started-at="2024-08-13T13:48:05 EDT" name="loginSetup" finished-at="2024-08-13T13:48:09 EDT" duration-ms="4051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifySearchInvalidProduct()[pri:2, instance:tutorialsNinja.TestCases.SearchProductTest@55b53d44]" started-at="2024-08-13T13:48:09 EDT" name="verifySearchInvalidProduct" finished-at="2024-08-13T13:48:09 EDT" duration-ms="581" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertFalse(Assert.java:78)
+at org.testng.Assert.assertFalse(Assert.java:88)
+at tutorialsNinja.TestCases.SearchProductTest.verifySearchInvalidProduct(SearchProductTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchInvalidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.SearchProductTest@55b53d44]" started-at="2024-08-13T13:48:09 EDT" name="tearDown" finished-at="2024-08-13T13:48:10 EDT" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:tutorialsNinja.TestCases.SearchProductTest@55b53d44]" started-at="2024-08-13T13:48:10 EDT" name="loginSetup" finished-at="2024-08-13T13:48:14 EDT" duration-ms="4078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifySearchNoProduct()[pri:3, instance:tutorialsNinja.TestCases.SearchProductTest@55b53d44]" started-at="2024-08-13T13:48:14 EDT" name="verifySearchNoProduct" finished-at="2024-08-13T13:48:14 EDT" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchNoProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.SearchProductTest@55b53d44]" started-at="2024-08-13T13:48:14 EDT" name="tearDown" finished-at="2024-08-13T13:48:14 EDT" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tutorialsNinja.TestCases.SearchProductTest -->
+      <class name="tutorialsNinja.TestCases.LoginTest">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:25 EDT" name="verifyLoginWithValidCredentials" finished-at="2024-08-13T13:48:25 EDT" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [verifyLoginWithValidCredentials] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [verifyLoginWithValidCredentials] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:25 EDT" name="loginSetup" finished-at="2024-08-13T13:48:29 EDT" duration-ms="4371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithValidEmailInvalidPassword()[pri:2, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:29 EDT" name="verifyLoginWithValidEmailInvalidPassword" finished-at="2024-08-13T13:48:31 EDT" duration-ms="1060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidEmailInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:31 EDT" name="tearDown" finished-at="2024-08-13T13:48:31 EDT" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:31 EDT" name="loginSetup" finished-at="2024-08-13T13:48:36 EDT" duration-ms="4691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithInvalidEmailValidPassword()[pri:3, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:36 EDT" name="verifyLoginWithInvalidEmailValidPassword" finished-at="2024-08-13T13:48:37 EDT" duration-ms="1184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidEmailValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:37 EDT" name="tearDown" finished-at="2024-08-13T13:48:37 EDT" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:37 EDT" name="loginSetup" finished-at="2024-08-13T13:48:43 EDT" duration-ms="5573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithInvalidCredentials()[pri:4, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:43 EDT" name="verifyLoginWithInvalidCredentials" finished-at="2024-08-13T13:48:44 EDT" duration-ms="1116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:44 EDT" name="tearDown" finished-at="2024-08-13T13:48:44 EDT" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:44 EDT" name="loginSetup" finished-at="2024-08-13T13:48:48 EDT" duration-ms="4419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithNoCredentials()[pri:5, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:48 EDT" name="verifyLoginWithNoCredentials" finished-at="2024-08-13T13:48:49 EDT" duration-ms="1004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithNoCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.LoginTest@366647c2]" started-at="2024-08-13T13:48:49 EDT" name="tearDown" finished-at="2024-08-13T13:48:50 EDT" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tutorialsNinja.TestCases.LoginTest -->
+      <class name="tutorialsNinja.TestCases.AddToCartTest">
+        <test-method is-config="true" signature="AddToCartTestSetup()[pri:0, instance:tutorialsNinja.TestCases.AddToCartTest@482bce4f]" started-at="2024-08-13T13:48:14 EDT" name="AddToCartTestSetup" finished-at="2024-08-13T13:48:19 EDT" duration-ms="4796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartTestSetup -->
+        <test-method signature="validatingValidProduct()[pri:1, instance:tutorialsNinja.TestCases.AddToCartTest@482bce4f]" started-at="2024-08-13T13:48:19 EDT" name="validatingValidProduct" finished-at="2024-08-13T13:48:19 EDT" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingValidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.AddToCartTest@482bce4f]" started-at="2024-08-13T13:48:19 EDT" name="tearDown" finished-at="2024-08-13T13:48:19 EDT" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="AddToCartTestSetup()[pri:0, instance:tutorialsNinja.TestCases.AddToCartTest@482bce4f]" started-at="2024-08-13T13:48:19 EDT" name="AddToCartTestSetup" finished-at="2024-08-13T13:48:25 EDT" duration-ms="5249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartTestSetup -->
+        <test-method signature="validateCompleteCheckoutWithValidProductPositiveFlow()[pri:2, instance:tutorialsNinja.TestCases.AddToCartTest@482bce4f]" started-at="2024-08-13T13:48:25 EDT" name="validateCompleteCheckoutWithValidProductPositiveFlow" finished-at="2024-08-13T13:48:25 EDT" duration-ms="105" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text() = '$122.00']"}
+  (Session info: chrome=127.0.6533.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b85d481e61b5d66b55e927d01c5162fe, findElement {value=//h2[text() = '$122.00'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\mezia\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63198/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b85d481e61b5d66b55e927d01c5162fe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text() = '$122.00']"}
+  (Session info: chrome=127.0.6533.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b85d481e61b5d66b55e927d01c5162fe, findElement {value=//h2[text() = '$122.00'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\mezia\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63198/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b85d481e61b5d66b55e927d01c5162fe
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at tutorialsNinja.Pages.AddToCartPage.displayStatusOfLaptopPrice(AddToCartPage.java:24)
+at tutorialsNinja.TestCases.AddToCartTest.validateCompleteCheckoutWithValidProductPositiveFlow(AddToCartTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCompleteCheckoutWithValidProductPositiveFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsNinja.TestCases.AddToCartTest@482bce4f]" started-at="2024-08-13T13:48:25 EDT" name="tearDown" finished-at="2024-08-13T13:48:25 EDT" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tutorialsNinja.TestCases.AddToCartTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

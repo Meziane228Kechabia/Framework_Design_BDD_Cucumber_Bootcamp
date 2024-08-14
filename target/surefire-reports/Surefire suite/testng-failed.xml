@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="tutorialsNinja.TestCases.AddToCartTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="AddToCartTestSetup"/>
+          <include name="validateCompleteCheckoutWithValidProductPositiveFlow"/>
+        </methods>
+      </class> <!-- tutorialsNinja.TestCases.AddToCartTest -->
+      <class name="tutorialsNinja.TestCases.SearchProductTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginSetup"/>
+          <include name="verifySearchNoProduct"/>
+          <include name="verifySearchInvalidProduct"/>
+          <include name="verifySearchValidProduct"/>
+        </methods>
+      </class> <!-- tutorialsNinja.TestCases.SearchProductTest -->
+      <class name="tutorialsNinja.TestCases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithValidCredentials"/>
+          <include name="loginSetup"/>
+        </methods>
+      </class> <!-- tutorialsNinja.TestCases.LoginTest -->
+      <class name="tutorialsNinja.TestCases.RegisterTest">
+        <methods>
+          <include name="verifyRegisterWithMandatoryDetails"/>
+          <include name="registerSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tutorialsNinja.TestCases.RegisterTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
