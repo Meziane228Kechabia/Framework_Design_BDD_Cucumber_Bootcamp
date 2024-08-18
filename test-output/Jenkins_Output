@@ -1,0 +1,151 @@
+Started by user Meziane Kechabia
+
+Running as SYSTEM
+Building in workspace C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Meziane228Kechabia/Framework_Design_BDD_Cucumber_Bootcamp
+ > C:\Program Files\Git\bin\git.exe init C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp # timeout=10
+Fetching upstream changes from https://github.com/Meziane228Kechabia/Framework_Design_BDD_Cucumber_Bootcamp
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > git --version # 'git version 2.44.0.windows.1'
+ > C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/Meziane228Kechabia/Framework_Design_BDD_Cucumber_Bootcamp +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/Meziane228Kechabia/Framework_Design_BDD_Cucumber_Bootcamp # timeout=10
+ > C:\Program Files\Git\bin\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision d2fc5627ea229bbd2a15d4199e4619692d6fb41d (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f d2fc5627ea229bbd2a15d4199e4619692d6fb41d # timeout=10
+Commit message: "up to run TestNg.xml on CMD Terminal"
+First time build. Skipping changelog.
+Parsing POMs
+Discovered a new module com.FRAMEWORK_Design_BDD_Cucumber:FRAMEWORK_Design_BDD_Cucumber FRAMEWORK_Design_BDD_Cucumber
+Modules changed, recalculating dependency graph
+Established TCP socket on 49848
+[Framework_Design_BDD_Cucumber_Boootcamp] $ "C:\Program Files\Java\jdk-17/bin/java" -cp C:\Users\mezia\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.14.jar;C:\Users\mezia\OneDrive\Desktop\Automation\MAVEN\apache-maven-3.9.6\boot\plexus-classworlds-2.7.0.jar;C:\Users\mezia\OneDrive\Desktop\Automation\MAVEN\apache-maven-3.9.6/conf/logging jenkins.maven3.agent.Maven35Main C:\Users\mezia\OneDrive\Desktop\Automation\MAVEN\apache-maven-3.9.6 C:\Users\mezia\.jenkins\war\WEB-INF\lib\remoting-3261.v9c670a_4748a_9.jar C:\Users\mezia\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.14.jar C:\Users\mezia\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.14.jar 49848
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\pom.xml install
+[INFO] Scanning for projects...
+[HUDSON] Collecting dependencies info
+[INFO] 
+[INFO] --< com.FRAMEWORK_Design_BDD_Cucumber:FRAMEWORK_Design_BDD_Cucumber >---
+[INFO] Building FRAMEWORK_Design_BDD_Cucumber 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/messages/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/messages/maven-metadata.xml (2.6 kB at 2.9 kB/s)
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\target\classes
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\target\test-classes
+[INFO] 
+[INFO] --- surefire:2.22.1:test (default-test) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+Aug 18, 2024 12:51:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:51:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:51:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:52:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:52:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:52:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:52:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:53:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:53:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:53:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:53:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:53:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+Aug 18, 2024 12:54:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 127
+[ERROR] Tests run: 15, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 182.94 s <<< FAILURE! - in TestSuite
+[ERROR] validateCompleteCheckoutWithValidProductPositiveFlow(tutorialsNinja.TestCases.AddToCartTest)  Time elapsed: 0.145 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text() = '$122.00']"}
+  (Session info: chrome=127.0.6533.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91856689f227c6276b666d29e23ce84c, findElement {value=//h2[text() = '$122.00'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\mezia\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49932/devtoo..., se:cdpVersion: 127.0.6533.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91856689f227c6276b666d29e23ce84c
+	at tutorialsNinja.TestCases.AddToCartTest.validateCompleteCheckoutWithValidProductPositiveFlow(AddToCartTest.java:41)
+
+[ERROR] verifyLoginWithValidCredentials(tutorialsNinja.TestCases.LoginTest)  Time elapsed: 0.381 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Cannot inject @Test annotated Method [verifyLoginWithValidCredentials] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+
+[ERROR] verifyRegisterWithMandatoryDetails(tutorialsNinja.TestCases.RegisterTest)  Time elapsed: 2.467 s  <<< FAILURE!
+java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\src\test\java\com\tutorialsNinja\TestData\ExcelData.xlsx (The system cannot find the path specified)
+Caused by: java.io.FileNotFoundException: C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\src\test\java\com\tutorialsNinja\TestData\ExcelData.xlsx (The system cannot find the path specified)
+
+[ERROR] verifySearchInvalidProduct(tutorialsNinja.TestCases.SearchProductTest)  Time elapsed: 0.998 s  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at tutorialsNinja.TestCases.SearchProductTest.verifySearchInvalidProduct(SearchProductTest.java:39)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AddToCartTest.validateCompleteCheckoutWithValidProductPositiveFlow:41 » NoSuchElement
+[ERROR]   LoginTest.verifyLoginWithValidCredentials » TestNG 
+Cannot inject @Test annota...
+[ERROR]   RegisterTest.verifyRegisterWithMandatoryDetails » Runtime java.io.FileNotFound...
+[ERROR]   SearchProductTest.verifySearchInvalidProduct:39 expected [false] but found [true]
+[INFO] 
+[ERROR] Tests run: 15, Failures: 4, Errors: 0, Skipped: 0
+[INFO] 
+[ERROR] There are test failures.
+
+Please refer to C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\target\surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[JENKINS] Recording test results
+[INFO] 
+[INFO] --- jar:3.0.2:jar (default-jar) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Building jar: C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\target\FRAMEWORK_Design_BDD_Cucumber-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ FRAMEWORK_Design_BDD_Cucumber ---
+[INFO] Installing C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\target\FRAMEWORK_Design_BDD_Cucumber-0.0.1-SNAPSHOT.jar to C:\Users\mezia\.m2\repository\com\FRAMEWORK_Design_BDD_Cucumber\FRAMEWORK_Design_BDD_Cucumber\0.0.1-SNAPSHOT\FRAMEWORK_Design_BDD_Cucumber-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\pom.xml to C:\Users\mezia\.m2\repository\com\FRAMEWORK_Design_BDD_Cucumber\FRAMEWORK_Design_BDD_Cucumber\0.0.1-SNAPSHOT\FRAMEWORK_Design_BDD_Cucumber-0.0.1-SNAPSHOT.pom
+[WARNING] Attempt to (de-)serialize anonymous class org.jfrog.hudson.maven2.MavenDependenciesRecorder$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:14 min
+[INFO] Finished at: 2024-08-18T12:54:17-04:00
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\pom.xml to com.FRAMEWORK_Design_BDD_Cucumber/FRAMEWORK_Design_BDD_Cucumber/0.0.1-SNAPSHOT/FRAMEWORK_Design_BDD_Cucumber-0.0.1-SNAPSHOT.pom
+[JENKINS] Archiving C:\Users\mezia\.jenkins\workspace\Framework_Design_BDD_Cucumber_Boootcamp\target\FRAMEWORK_Design_BDD_Cucumber-0.0.1-SNAPSHOT.jar to com.FRAMEWORK_Design_BDD_Cucumber/FRAMEWORK_Design_BDD_Cucumber/0.0.1-SNAPSHOT/FRAMEWORK_Design_BDD_Cucumber-0.0.1-SNAPSHOT.jar
+channel stopped
+Finished: UNSTABLE
